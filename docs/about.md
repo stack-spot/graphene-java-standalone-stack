@@ -29,7 +29,7 @@ Realize experimentos, validações de conceitos, testes e algoritmos de forma r�
 - Versão do projeto
 - Nome do pacote: Ex (br.com.orgname)
 - Versão do Java: (11 ou 17)
-- Ferramenta de compilação: (Maven, Gradle ou None)
+- Ferramenta de Build: (Maven, Gradle ou None)
 
 ### Requerimentos:
 - É necessário ter o Java instalado no ambiente conforme com a versão selecionada durante a geração do projeto.

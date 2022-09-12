@@ -33,9 +33,9 @@ inputs:
   - label: Select the project build tool
     type: text
     items:
-      - None
       - Maven
       - Gradle
+      - None
     default: None
     name: build_tool
     global: true
