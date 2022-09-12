@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>jar</packaging>
+
+    <groupId>{{project_group_id}}</groupId>
+    <artifactId>{{project_artifact_id}}</artifactId>
+    <version>{{project_version}}</version>
+
+    <properties>
+        <maven.compiler.source>{{project_java_version}}</maven.compiler.source>
+        <maven.compiler.target>{{project_java_version}}</maven.compiler.target>
+        <maven.plugin.jar>3.2.2</maven.plugin.jar>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    </properties>
+    <build>
+        <finalName>{{project_artifact_id}}-{{project_version}}-final</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>${maven.plugin.jar}</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>{{package_dir}}.Main</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
+</project>
