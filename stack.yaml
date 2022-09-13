@@ -1,4 +1,4 @@
-description: Possibilita criar aplicações ou modulos Java de forma rápida e padronizada, escolher entre as versões Java (11 e 17), utilizar as ferramentas de build (Gradle, Maven), realizar experimentos, validações de conceitos, testes e algoritmos.
+description: Crie aplicações ou módulos Java de forma rápida e padronizada, faça experimentos e validações de conceitos.
 name: graphene-java-standalone-stack
 display-name: graphene-java-standalone-stack
 picture: stack.png
