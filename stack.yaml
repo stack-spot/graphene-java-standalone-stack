@@ -5,11 +5,19 @@ picture: stack.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility: # Put a list of technologies compatible with the stack
   - java
-  - spring
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies 
-  - docker 
+  - java
 about: docs/about.md
 use-cases:
-  - title: Use Case Title
-    content: docs/use-case.md
-    stackfile: stackfiles/default.yaml
+  - title: Gradle and Java 11
+    content: docs/use-case-gradle-java-11.md
+    stackfile: stackfiles/gradle-java-11.yaml
+  - title: Maven and Java 11
+    content: docs/use-case-maven-java-11.md
+    stackfile: stackfiles/maven-java-11.yaml
+  - title: Gradle and Java 17
+    content: docs/use-case-gradle-java-17.md
+    stackfile: stackfiles/gradle-java-17.yaml
+  - title: Maven and Java 17
+    content: docs/use-case-maven-java-17.md
+    stackfile: stackfiles/maven-java-17.yaml

@@ -1,5 +1,5 @@
 name: java-starter
-description: Template usado para facilitar a criação de projetos Java, possibilitando escolher entre as versões do Java, ferramentas de build (Gradle, Maven), realizar experimentos, validações de conceitos, testes e algoritmos.
+description: Template usado para facilitar a criação de projetos Java, possibilitando escolher entre suas versões, bem como a ferramenta de build de sua escolha (Gradle, Maven), realizar experimentos, validações de conceitos, testes e algoritmos.
 types:
   - app-template
 inputs:

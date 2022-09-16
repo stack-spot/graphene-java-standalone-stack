@@ -1,0 +1,6 @@
+type: app
+description: Stackfile used to create applications using Java 11 and Gradle
+template: graphene-java-standalone-stack/java-starter
+inputs:
+  project_java_version: 11
+  build_tool: Gradle

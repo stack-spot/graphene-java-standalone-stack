@@ -14,30 +14,33 @@ Realize experimentos, validações de conceitos, testes e algoritmos de forma r�
 - Algoritmos
 - Módulos de aplicações Java.
 
-#### Para utilizar o template standalone é necessário realizar os seguintes passos:
+#### **Pré-requisitos**
+- [**Instalação StakSpot CLI**](https://docs.stackspot.com/latest/os-cli/installation/)
+- [**Java >= 11**](https://openjdk.org/)
+- [**Git**](https://git-scm.com/)
+
+#### **Para utilizar o template standalone é necessário realizar os seguintes passos:**
 - ##### 1 Importar a stack
- ```
+ ```bash
     stk import stack https://github.com/stack-spot/graphene-java-standalone-stack
  ```
 
-- ##### 2 Executar o comando
- ```
+- ##### 2 Executar o comando abaixo para criar o projeto
+ ```bash
     stk create app <nome da aplicação> --template graphene-java-standalone-stack/starter-java
  ```
 
-#### O stackspot irá solicitar o preenchimento dos seguintes inputs:
+- ##### 3 Realizar o preenchimento dos inputs solicitados conforme mostrado abaixo:
 - Versão do projeto
 - Nome do pacote: Ex (br.com.orgname)
 - Versão do Java: (11 ou 17)
 - Ferramenta de Build: (Maven, Gradle ou None)
 
-### Requerimentos:
-- É necessário ter o Java instalado no ambiente conforme com a versão selecionada durante a geração do projeto.
-- Gradle ou Maven previamente configurado, ou utilizar os wrappers gerados na raiz do projeto.
-  - Realização do build da aplicação utilizando os wrappers. Ex:
-    - Linux
-      - Maven: **./mvnw clean install**
-      - Gradle: **./gradlew build**
-    - Windows
-      - Maven: **mvnw clean install**
-      - Gradle: **gradlew build**
+- ##### 4 Realizar o build do projeto
+- Navegar até a raiz do projeto gerado e executar um dos comandos abaixo de acordo com o preenchimento dos inputs
+  - Linux
+    - Maven: **./mvnw clean install**
+    - Gradle: **./gradlew build**
+  - Windows
+    - Maven: **mvnw clean install**
+    - Gradle: **gradlew build**
