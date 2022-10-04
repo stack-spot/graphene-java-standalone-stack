@@ -19,28 +19,31 @@ Realize experimentos, validações de conceitos, testes e algoritmos de forma r�
 - [**Java >= 11**](https://openjdk.org/)
 - [**Git**](https://git-scm.com/)
 
-#### **Para utilizar o template standalone é necessário realizar os seguintes passos:**
-- ##### 1 Importar a stack
- ```bash
-    stk import stack https://github.com/stack-spot/graphene-java-standalone-stack
- ```
-
-- ##### 2 Executar o comando abaixo para criar o projeto
+- ##### 1. Após a importação da stack, executar o comando abaixo
  ```bash
     stk create app <nome da aplicação> --template graphene-java-standalone-stack/starter-java
  ```
 
-- ##### 3 Realizar o preenchimento dos inputs solicitados conforme mostrado abaixo:
+- ##### 2 Realizar o preenchimento dos inputs solicitados conforme mostrado abaixo:
 - Versão do projeto
 - Nome do pacote: Ex (br.com.orgname)
 - Versão do Java: (11 ou 17)
 - Ferramenta de Build: (Maven, Gradle ou None)
 
-- ##### 4 Realizar o build do projeto
+- ##### 3 Realizar o build do projeto
 - Navegar até a raiz do projeto gerado e executar um dos comandos abaixo de acordo com o preenchimento dos inputs
+- Realizar o build da aplicação através do **gradle ou maven**. Ex:
   - Linux
-    - Maven: **./mvnw clean install**
-    - Gradle: **./gradlew build**
+      ```bash
+      #Maven:
+        ./mvnw clean install
+      #OR Gradle
+        ./gradlew build
+      ```
   - Windows
-    - Maven: **mvnw clean install**
-    - Gradle: **gradlew build**
+      ```bash
+      #Maven: 
+          mvnw clean install**
+      #OR Gradle: 
+          gradlew build
+      ``` 
