@@ -1,41 +1,39 @@
 ## **Caso de Uso**
-Este Caso de Uso é ideal para a inicialização de projetos Java 17 com Gradle
+This use case is ideal to initialize projects using Java 17 with Gradle
 
-### **Visão Geral**
-Possibilita a criação de aplicações Java 17 utilizando Gradle de forma rápida com execução de um simples comando.
+### **Overview**
+Enables the creation of projects using Java 17 and Gradle quickly through the execution of a simple command.
 
-### **Pré-requisitos**
-Para usar a stack/template é preciso ter instalado os itens abaixo:
-
-- [**Instalação StakSpot CLI**](https://docs.stackspot.com/latest/os-cli/installation/)
+### **Requirements**
+- [**CLI StakSpot Installation**](https://docs.stackspot.com/latest/os-cli/installation/)
 - [**Java 17**](https://openjdk.org/)
 - [**Git**](https://git-scm.com/)
 
-### Configuração Stack CLI
-- ##### 1 Execute o comando abaixo para atualizar o catalogo de studios
+### Configuring stack
+- ##### 1 Execute the command below to make the stack importation
  ```bash
     stk import stack https://github.com/stack-spot/graphene-java-standalone-stack
  ```
-**Listagem template disponíveis localmente:**
+**List available templates locally:**
 ```bash
 stk list template
 ```
-**Exemplo output:**
+**Output example:**
 ```bash
 Stack: graphene-java-standalone-stack
-+-------------------------+-----------------------------------------------------------+------------------+-----------------+
-| name                    | description                                                | types            | version(latest) |
-+-------------------------+------------------------------------------------------------+------------------+-----------------+
-|    java-starter         | Template usado para facilitar a criação de projetos Java,  | ['app-template'] | no release      |
-|                         | possibilitando escolher entre suas versões, bem como  a    |                  |                 |
-|                         | ferramenta de build de sua escolha (Gradle, Maven),        |                  |                 |
-|                         | realizar experimentos, validações de conceitos, testes e   |                  |                 |
-|                         | algoritmos.                                                |                  |                 |
-+-------------------------+-----------------------------------------------------------+------------------+------------------+
++-------------------------+-------------------------------------------------------------+------------------+-----------------+
+| name                    | description                                                 | types            | version(latest) |
++-------------------------+------------------------------------------------------------ +------------------+-----------------+
+|    java-starter         | Template used to simplify the Java project creation,        | ['app-template'] | no release      |
+|                         | enabling to choose between its versions, as well as         |                  |                 |
+|                         | the build tool according to your preference (Gradle, Maven),|                  |                 |
+|                         | making experiments, concepts validation, tests and fast     |                  |                 |
+|                         | algorithms creation.                                        |                  |                 |
++-------------------------+-----------------------------------------------------------+-------------------+------------------+
 ```
 
-### Instalacao
-Para criar uma aplicação e já configurar o seu projeto com o Gradle a Java 17, copie e cole o comando abaixo no seu terminal:
+### Installation
+Copy and execute the command below to create a fast application using Java 17 and Gradle:
 
 ```bash
 stk create app meu-teste-app --stackfile graphene-java-standalone-stack/gradle-java-17

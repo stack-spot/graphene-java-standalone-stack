@@ -1,0 +1,59 @@
+name: java-starter
+description: Template usado para simplificar a criação de projetos Java, permitindo que você escolha entre as versões 11 e 17, bem como a ferramenta de build de acordo com sua preferência (Gradle, Maven), realizar experimentos, validação de conceitos, testes e criação rápida de algorítimos
+types:
+  - app-template
+inputs:
+  ## Não remova a label project_name, isso não aparecerá para os usuários, mas é necessário para ser usado nos computed inputs e global inputs.
+  - label: Nome do projeto
+    type: text
+    name: project_name
+    global: true
+  - label: Informe o artifact ID do projeto
+    type: text
+    name: project_artifact_id
+    pattern: '(^[a-zA-Z-_\d]*)'
+    global: true
+  - label: Informe a versão do projeto
+    type: text
+    name: project_version
+    default: '0.0.1-SNAPSHOT'
+  - label: Informe o Group ID do projeto
+    type: text
+    name: project_group_id
+    default: br.com.graphene
+    global: true
+    pattern: '(^[a-zA-Z_\d.]*)'
+  - label: Selecione a versão do Java
+    type: text
+    items:
+      - 17
+      - 11
+    name: project_java_version
+    global: true
+  - label: Selecione a ferramenta de build
+    type: text
+    items:
+      - Maven
+      - Gradle
+      - None
+    default: None
+    name: build_tool
+    global: true
+global-computed-inputs:
+  "base_package": "{{project_group_id}}.{{project_name}}"
+  "package_dir": "{{global_computed_inputs.base_package|replace('.','/')}}"
+hooks:
+  - type: render-templates
+    trigger: after-render
+    path: buildtool/gradle
+    condition:
+      variable: build_tool
+      operator: ==
+      value: Gradle
+  - type: render-templates
+    trigger: after-render
+    path: buildtool/maven
+    condition:
+      variable: build_tool
+      operator: ==
+      value: Maven

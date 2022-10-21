@@ -1,4 +1,4 @@
-description: Crie aplicações ou módulos Java de forma rápida e padronizada, faça experimentos e validações de conceitos.
+description: Create Java project, choose between its versions, as well as the build tool according to your preference (Gradle, Maven), make experiments, concepts validation, tests and fast algorithms creation.
 name: graphene-java-standalone-stack
 display-name: graphene-java-standalone-stack
 picture: stack.png
