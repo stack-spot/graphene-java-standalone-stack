@@ -1,20 +1,17 @@
 ## **Caso de Uso**
-This use case is ideal to initialize projects using Java 17 with Gradle
+This use case initializes projects using Java 17 with Gradle.
 
 ### **Overview**
-Enables the creation of projects using Java 17 and Gradle quickly through the execution of a simple command.
+You can create projects using Java 17 and Gradle with one command.
 
 ### **Requirements**
-- [**CLI StakSpot Installation**](https://docs.stackspot.com/latest/os-cli/installation/)
+- [**STK CLI**](https://stackspot.com/login?route=/download/cli)
 - [**Java 17**](https://openjdk.org/)
 - [**Git**](https://git-scm.com/)
 
-### Configuring stack
-- ##### 1 Execute the command below to make the stack importation
- ```bash
-    stk import stack https://github.com/stack-spot/graphene-java-standalone-stack
- ```
-**List available templates locally:**
+### Configure a Stack
+Follow the steps below:
+**Step 1.** List available templates locally:
 ```bash
 stk list template
 ```
@@ -26,14 +23,14 @@ Stack: graphene-java-standalone-stack
 +-------------------------+------------------------------------------------------------ +------------------+-----------------+
 |    java-starter         | Template used to simplify the Java project creation,        | ['app-template'] | no release      |
 |                         | enabling to choose between its versions, as well as         |                  |                 |
-|                         | the build tool according to your preference (Gradle, Maven),|                  |                 |
-|                         | making experiments, concepts validation, tests and fast     |                  |                 |
-|                         | algorithms creation.                                        |                  |                 |
+|                         | the build tool according to your preference (Gradle, Maven).|                  |                 |
+|                         | You can make experiments, concepts validation, tests, and   |                  |                 |
+|                         | fast algorithms creation.                                   |                  |                 |
 +-------------------------+-----------------------------------------------------------+-------------------+------------------+
 ```
 
 ### Installation
-Copy and execute the command below to create a fast application using Java 17 and Gradle:
+To create a fast application using Java 17 and Gradle, execute the command in the terminal:
 
 ```bash
 stk create app meu-teste-app --stackfile graphene-java-standalone-stack/gradle-java-17

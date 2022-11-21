@@ -1,22 +1,20 @@
 ## **Caso de Uso**
-Este Caso de Uso é ideal para a inicialização de projetos Java 11 com Maven
+Este caso de uso mostra a inicialização de projetos Java 11 com Maven.
 
 ### **Visão Geral**
-Possibilita a criação de aplicações Java 11 utilizando Maven de forma rápida com execução de um simples comando.
+Você pode criar aplicações Java 11 utilizando Maven de forma rápida, executando apenas um comando.
 
 ### **Pré-requisitos**
 Para usar a stack/template é preciso ter instalado os itens abaixo:
 
-- [**Instalação StakSpot CLI**](https://docs.stackspot.com/latest/os-cli/installation/)
+- [**STK CLI**](https://stackspot.com/login?route=/download/cli)
 - [**Java 11**](https://openjdk.org/)
 - [**Git**](https://git-scm.com/)
 
-### Configuração Stack CLI
-- ##### 1 Execute o comando abaixo para atualizar o catalogo de studios
- ```bash
-    stk import stack https://github.com/stack-spot/graphene-java-standalone-stack
- ```
-**Listagem template disponíveis localmente:**
+### Configuração da Stack
+Siga os passos abaixo:
+**Passo 1.** Listar os template disponíveis localmente
+Execute o comando:
 ```bash
 stk list template
 ```
@@ -34,8 +32,8 @@ Stack: graphene-java-standalone-stack
 +-------------------------+-----------------------------------------------------------+------------------+------------------+
 ```
 
-### Instalacao
-Para criar uma aplicação e já configurar o seu projeto com o Maven a Java 11, copie e cole o comando abaixo no seu terminal:
+### Instalação
+Para criar uma aplicação e configurar o seu projeto com o Maven a Java 11, execute o comando abaixo no seu terminal:
 
 ```bash
 stk create app meu-teste-app --stackfile graphene-java-standalone-stack/maven-java-11
