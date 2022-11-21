@@ -1,0 +1,23 @@
+description: Crie aplicações ou módulos Java de forma rápida e padronizada, faça experimentos e validações de conceitos.
+name: graphene-java-standalone-stack
+display-name: graphene-java-standalone-stack
+picture: stack.png
+category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
+compatibility: # Put a list of technologies compatible with the stack
+  - java
+technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
+  - java
+about: docs/about.md
+use-cases:
+  - title: Gradle e Java 11
+    content: docs/use-case-gradle-java-11_pt-BR.md
+    stackfile: stackfiles/gradle-java-11.yaml
+  - title: Maven e Java 11
+    content: docs/use-case-maven-java-11_pt-BR.md
+    stackfile: stackfiles/maven-java-11.yaml
+  - title: Gradle e Java 17
+    content: docs/use-case-gradle-java-17_pt-BR.md
+    stackfile: stackfiles/gradle-java-17.yaml
+  - title: Maven e Java 17
+    content: docs/use-case-maven-java-17_pt-BR.md
+    stackfile: stackfiles/maven-java-17.yaml

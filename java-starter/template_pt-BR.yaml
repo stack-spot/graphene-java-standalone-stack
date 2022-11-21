@@ -1,36 +1,36 @@
 name: java-starter
-description: Template used to simplify the Java project creation, enabling you to choose between its versions, as well as the build tool according to your preference (Gradle, Maven), making experiments, concepts validation, tests and fast algorithms creation.
+description: Template usado para simplificar a criação de projetos Java, permitindo que você escolha entre as versões 11 e 17, bem como a ferramenta de build de acordo com sua preferência (Gradle, Maven), realizar experimentos, validação de conceitos, testes e criação rápida de algorítimos
 types:
   - app-template
 inputs:
-  ## DON'T REMOVE THE LABEL PROJECT NAME, IT WON'T APPEAR TO THE USERS, BUT REQUIRED TO BE USED IN COMPUTED INPUTS AND GLOBAL INPUTS
-  - label: Project Name
+  ## Não remova a label project_name, isso não aparecerá para os usuários, mas é necessário para ser usado nos computed inputs e global inputs.
+  - label: Nome do projeto
     type: text
     name: project_name
     global: true
-  - label: Enter with the project artifact ID
+  - label: Informe o artifact ID do projeto
     type: text
     name: project_artifact_id
     pattern: '(^[a-zA-Z-_\d]*)'
     global: true
-  - label: Enter with the project version
+  - label: Informe a versão do projeto
     type: text
     name: project_version
     default: '0.0.1-SNAPSHOT'
-  - label: Enter with a Group ID for the project
+  - label: Informe o Group ID do projeto
     type: text
     name: project_group_id
     default: br.com.graphene
     global: true
     pattern: '(^[a-zA-Z_\d.]*)'
-  - label: Select the Java version
+  - label: Selecione a versão do Java
     type: text
     items:
       - 17
       - 11
     name: project_java_version
     global: true
-  - label: Select the project build tool
+  - label: Selecione a ferramenta de build
     type: text
     items:
       - Maven
