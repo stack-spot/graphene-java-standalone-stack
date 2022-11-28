@@ -43,4 +43,13 @@ $RECYCLE.BIN/
 .desktop
 
 #Intellij
-/.idea/
+.idea
+
+## Exception
+!/java-starter/buildtool/gradle/gradle/wrapper/gradle-wrapper.jar
+!/java-starter/buildtool/maven/.mvn/wrapper/maven-wrapper.jar
+
+
+
+
+
