@@ -1,6 +1,6 @@
 description: Create Java project, choose between its versions, as well as the build tool according to your preference (Gradle, Maven), make experiments, concepts validation, tests and fast algorithms creation.
 name: graphene-java-standalone-stack
-display-name: graphene-java-standalone-stack
+display-name: Java Standalone Stack
 picture: stack.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility: # Put a list of technologies compatible with the stack
